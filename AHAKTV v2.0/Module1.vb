@@ -26,7 +26,7 @@ Module Module1
 
     Public Sub showdata()
         conn = New MySqlConnection()
-        conn.ConnectionString = "server=localhost;user id=root;" &
+        conn.ConnectionString = "server=10.0.14.212;user id=root;" &
                                 "password=;database=movedb"
         Try
             conn.Open()
