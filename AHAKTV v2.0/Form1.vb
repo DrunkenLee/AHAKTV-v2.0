@@ -469,7 +469,7 @@ Public Class AHAKTV
     End Sub
 
     Sub dgshow_dblclick(sender As Object, e As DataGridViewCellEventArgs) Handles dgshow.CellDoubleClick
-        Dim defaultpath As String = "C:\"
+        Dim defaultpath As String = "10.0.14.212\dbs0ngs1\"
         Dim row As DataGridViewRow = dgshow.Rows(e.RowIndex)
         Dim Control3 As IWMPControls3 = player1.Ctlcontrols
         tbxvoc.Text = row.Cells(5).Value.ToString
@@ -515,7 +515,7 @@ Public Class AHAKTV
 
     Private Sub ListBox1_doubleclick(sender As Object, e As EventArgs) Handles ListBox1.MouseDoubleClick
 
-        Dim defaultpath As String = "C:\"
+        Dim defaultpath As String = "10.0.14.212\dbs0ngs1\"
         Dim Control3 As IWMPControls3 = player1.Ctlcontrols
 
         Try
@@ -535,7 +535,7 @@ Public Class AHAKTV
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Dim defaultpath As String = "C:\"
+        Dim defaultpath As String = "10.0.14.212\dbs0ngs1\"
         Dim Control3 As IWMPControls3 = player1.Ctlcontrols
 
         Try
