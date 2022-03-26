@@ -23,6 +23,7 @@ Public Class AHAKTV
             titlegotfocus = 0
 
 
+
             Module1.connectionsql()
             Module1.showdata()
 

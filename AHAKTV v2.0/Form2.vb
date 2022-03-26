@@ -1,9 +1,15 @@
 ﻿
 Public Class Form2
     Sub startbtn_Click(sender As Object, e As EventArgs) Handles startbtn.Click
+        Dim screen As Screen
+        screen = Screen.AllScreens(1)
+
         Try
             loadingbar.Value = 0
             Timer1.Start()
+            Form3.StartPosition = FormStartPosition.Manual
+            Form3.Location = screen.Bounds.Location + New Point(100, 100)
+            Form3.ShowDialog()
         Catch ex As Exception
 
         End Try
@@ -18,6 +24,7 @@ Public Class Form2
                 Timer1.Stop()
                 Me.Hide()
                 AHAKTV.ShowDialog()
+                Form3.ShowDialog()
 
             Catch ex As Exception
 

@@ -19,6 +19,7 @@ Module Module1
             conn.Close()
         Catch myerror As MySqlException
             MessageBox.Show("Error Koneksi: " & myerror.Message)
+            MessageBox.Show(conn.ConnectionString.ToString)
         Finally
             conn.Dispose()
         End Try
